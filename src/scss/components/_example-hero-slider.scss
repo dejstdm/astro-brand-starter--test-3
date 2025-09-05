@@ -74,6 +74,19 @@
 
     @media (max-width: $md) {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+
+      &.mobile-open {
+        display: flex;
+      }
     }
   }
 
@@ -109,6 +122,19 @@
 
     @media (max-width: $md) {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      padding: 20px;
+      margin-top: 200px; // Space for menu items
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      &.mobile-open {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
