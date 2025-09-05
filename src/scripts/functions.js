@@ -8,6 +8,8 @@ import { initExampleBackToTop } from "./modules/example-back-to-top.mjs";
 import { initExampleCheckbox } from "./modules/example-checkbox.mjs";
 import { initExampleFloatingLabels } from "./modules/example-floating-labels.mjs";
 import { initExampleModal } from "./modules/example-modal.mjs";
+import { exampleHeroSlider } from "./modules/example-hero-slider.mjs";
+import { initHero } from "./modules/hero.mjs";
 
 exampleFunction();
 buttonsExample();
@@ -16,6 +18,8 @@ initExampleAccordion();
 initExampleCheckbox();
 initExampleFloatingLabels();
 initExampleModal();
+exampleHeroSlider();
+initHero();
 
 // Initialize countdown timer and back-to-top
 document.addEventListener('DOMContentLoaded', () => {
