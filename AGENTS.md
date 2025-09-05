@@ -72,6 +72,12 @@ src/
 - **Stick to the task**: This rule applies to SCSS, components, pages, and all project files
 - **Ask for clarification**: If unsure about scope, ask the user rather than making assumptions
 
+### Component Request Defaults
+- **Category default (explicit exception to the no-assumptions rule)**: If a request to create a component does not specify the category (`examples` or `prod`), treat it as a request for a **prod** component by default.
+- **What to create**: Place the component in `src/components/prod/`. Only add SCSS (`src/scss/components/` + import in `src/scss/main.scss`) and/or JS (`src/scripts/modules/`) if explicitly requested.
+- **Test pages are generated later (AI)**: Dev test pages live in `src/pages/dev/components-pages/` and are created later by an AI workflow (no npm command). Do not create test pages during the component creation step.
+- **Clarify other details**: This default applies only to the component category. For anything else (props, content, assets, interactivity), ask for clarification if not explicitly requested.
+
 ## File Organization
 
 ### Naming Conventions

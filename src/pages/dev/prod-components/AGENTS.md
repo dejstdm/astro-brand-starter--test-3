@@ -20,7 +20,7 @@ This directory contains the **production components showcase page** that display
 
 ### Component Listing Rules
 - **List ALL prod components** from `/src/components/prod/` directory
-- **Link to test pages** in `/src/pages/dev/components-pages/`
+- **Link to test pages** in `/src/pages/dev/components-pages/` when available (these pages are generated later by an AI workflow)
 - **Include component previews** by importing and displaying actual components
 - **Maintain consistent styling** with the existing example components showcase
 

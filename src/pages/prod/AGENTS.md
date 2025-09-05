@@ -170,7 +170,7 @@ export function componentName() {
 ### Component Documentation
 - **Example Components Showcase**: Create `/src/pages/dev/components-all/index.astro`
 - **Prod Components Showcase**: Create `/src/pages/dev/prod-components/index.astro`
-- **Individual Pages**: Create `/src/pages/dev/components-pages/`
+- **Individual Pages**: Located in `/src/pages/dev/components-pages/` and generated later by an AI workflow when requested
 - **Production Pages**: Create `/src/pages/prod/`
 
 ### Version Control
@@ -187,6 +187,7 @@ export function componentName() {
 ## Production System Expansion
 
 ### Adding New Components
+**Default category rule**: If a component request does not specify category (`examples` or `prod`), treat it as **prod** and place it in `src/components/prod/`.
 1. **Design Phase**: Define component purpose and visual requirements
 2. **Development Phase**: Create Astro component with SCSS styling (see `/src/components/AGENTS.md`)
 3. **Documentation Phase**: Add to component showcase and create usage examples

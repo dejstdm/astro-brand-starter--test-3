@@ -31,6 +31,12 @@ src/components/
 - **Development Components**: Tools and navigation for development environment
 - **Production Components**: Other reusable components for actual brand websites
 
+### Category Selection (Required)
+- **Required input**: Specify component category as `examples` or `prod`.
+- **Default behavior**: If not specified, the component is assumed to be **prod** and should be placed in `src/components/prod/`.
+- **Styling/JS**: Only add SCSS and JS when explicitly requested by the task/request.
+- **Test pages later**: Dev test pages are generated at the end via a separate command.
+
 ## Component Structure Standards
 
 ### Component Validation Checklist
@@ -43,8 +49,7 @@ src/components/
 - [ ] `<h2 class="component-name__title sec__title">` (both classes for titles)
 - [ ] All required classes are present and correctly named
 - [ ] No custom container structures or bypasses
-- [ ] Test page created in `/src/pages/dev/components-pages/` directory
-- [ ] Test page follows required structure with DevLayout
+
 
 ### Standard Component Template
 ```astro
@@ -126,14 +131,14 @@ src/components/
 ## Component Development Workflow
 
 ### 1. Component Creation
+Choose the category explicitly (`examples` or `prod`). If the category is not provided, default to **prod** and use the `src/components/prod/` path.
+
 ```bash
 # Create component files
-touch src/components/examples/NewComponent.astro
-touch src/scss/components/_new-component.scss
-touch src/scripts/modules/new-component.mjs
-
-# Create test page in CORRECT location
-touch src/pages/dev/components-pages/new-component-page.astro
+touch src/components/examples/NewComponent.astro   # when category = examples
+touch src/components/prod/NewComponent.astro       # when category = prod (default if unspecified)
+touch src/scss/components/_new-component.scss      # only when styling is requested
+touch src/scripts/modules/new-component.mjs        # only when JS is requested
 ```
 
 ### 2. Component Structure
@@ -157,16 +162,15 @@ import DevLayout from '../../layouts/DevLayout.astro';
 </DevLayout>
 ```
 
-### 3. Test Page Creation
-**CRITICAL RULE**: **EVERY component MUST have a test page in the correct location**:
+### Post-Creation: Test Pages (AI Workflow)
+- Test pages live under `src/pages/dev/components-pages/` and are generated later by an AI workflow (not an npm command) to avoid unnecessary Builder.io token usage.
 
-```bash
-# Test page location - NEVER create in wrong directory
-src/pages/dev/components-pages/component-name-page.astro  # ✅ CORRECT
-src/pages/dev/component-name-page.astro                  # ❌ WRONG
+**Test Page Location (for reference)**
+```text
+src/pages/dev/components-pages/component-name-page.astro
 ```
 
-**Required Test Page Structure**:
+**Test Page Structure (reference)**
 ```astro
 ---
 import DevLayout from '../../layouts/DevLayout.astro';
@@ -181,6 +185,21 @@ import ComponentName from '../../components/examples/ComponentName.astro';
     <ComponentName />
   </div>
 </DevLayout>
+```
+
+### 3. Placement in Production Pages
+After creating the component, place it on the appropriate production page (for example, the homepage) so it is visible in the product context.
+
+Example (in `src/pages/prod/homepage.astro`):
+```astro
+---
+import ProdLayout from '../../layouts/ProdLayout.astro';
+import NewComponent from '../../components/prod/NewComponent.astro';
+---
+
+<ProdLayout>
+  <NewComponent />
+</ProdLayout>
 ```
 
 ### 3. SCSS Integration
@@ -416,7 +435,7 @@ class ComponentState {
 ### Design System Integration
 - **Example Components Showcase**: Add to `/src/pages/dev/components-all/index.astro`
 - **Prod Components Showcase**: Add to `/src/pages/dev/prod-components/index.astro`
-- **Individual Pages**: Create in `/src/pages/dev/components-pages/`
+- **Individual Pages**: Located in `/src/pages/dev/components-pages/` and created via the test-page generation command
 - **Documentation**: Update design system documentation
 
 ### Layout Guidelines
