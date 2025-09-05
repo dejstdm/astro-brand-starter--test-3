@@ -46,6 +46,19 @@ All commands are run from the root of the project, from a terminal:
   ```
   - Outputs static HTML, CSS, and JS to `/dist`.
 
+## 🧩 Test Pages Are Generated Later (AI Workflow)
+
+- Test pages for components are not created during the component creation step.
+- They are generated later by an AI workflow (e.g., via Figma MCP + Builder.io assistants) to avoid spending Builder.io tokens early.
+- There is no `npm run create-test-pages` command; references to a "command" mean an instruction you give to your AI tooling.
+
+Guidance:
+- During component creation, only build the component and place it on the appropriate production page (for example `src/pages/prod/homepage.astro`).
+- When components are ready, ask your AI assistant to generate dev test pages under `src/pages/dev/components-pages/` using `DevLayout`.
+
+Example AI instruction (not an npm command):
+- "Create test pages for all newly added prod components under `src/pages/dev/components-pages/` using DevLayout."
+
 ## 📦 Using the Output
 
 - After building, copy the HTML, CSS, and JS from `/dist` into your target system (e.g., a Drupal theme).
