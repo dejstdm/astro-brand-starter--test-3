@@ -1,0 +1,174 @@
+---
+import DevLayout from '../../layouts/DevLayout.astro';
+import Hero from '../../components/prod/Hero.astro';
+---
+
+<DevLayout title="Hero Component">
+  <div class="component-showcase">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-4 mb-3">Hero Component</h1>
+          <p class="lead text-muted mb-5">
+            A production-ready hero component with integrated navigation and Swiper.js slider functionality. 
+            Features responsive design, autoplay, and smooth transitions based on the Nexcent design system.
+          </p>
+        </div>
+      </div>
+      
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Component Features</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Navigation</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">✅ Nexcent branding with logo</li>
+                    <li class="mb-2">✅ Responsive navigation menu</li>
+                    <li class="mb-2">✅ Mobile hamburger toggle</li>
+                    <li class="mb-2">✅ Action buttons (Login/Sign up)</li>
+                    <li class="mb-2">✅ Active state management</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Hero Slider</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">✅ Swiper.js powered slider</li>
+                    <li class="mb-2">✅ 3 slides with unique content</li>
+                    <li class="mb-2">✅ Auto-play (5s interval)</li>
+                    <li class="mb-2">✅ Custom pagination dots</li>
+                    <li class="mb-2">✅ Keyboard navigation support</li>
+                    <li class="mb-2">✅ Pause on hover</li>
+                    <li class="mb-2">✅ Slide animations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Design System Integration</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Colors Used</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">🎨 Primary: <code>--color-primary</code> (#4CAF4F)</li>
+                    <li class="mb-2">🎨 Background: <code>--color-silver</code> (#F5F7FA)</li>
+                    <li class="mb-2">🎨 Text Primary: <code>--color-text-primary</code></li>
+                    <li class="mb-2">🎨 Text Secondary: <code>--color-grey</code></li>
+                    <li class="mb-2">🎨 White: <code>--color-white</code></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Responsive Breakpoints</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">📱 Mobile: <320px (stacked layout)</li>
+                    <li class="mb-2">📱 Small: 576px (optimized mobile)</li>
+                    <li class="mb-2">💻 Medium: 768px (tablet adjustments)</li>
+                    <li class="mb-2">🖥️ Large: 992px+ (desktop layout)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Usage & Implementation</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Component Structure</h4>
+                  <pre class="bg-light p-3 rounded"><code>&lt;section class="page-sec page-sec--hero"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="hero sec"&gt;
+      &lt;nav class="hero__nav"&gt;
+        &lt;!-- Navigation content --&gt;
+      &lt;/nav&gt;
+      
+      &lt;div class="hero__content sec__content"&gt;
+        &lt;div class="swiper hero__swiper js__hero-slider"&gt;
+          &lt;!-- Slides --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">JavaScript Initialization</h4>
+                  <pre class="bg-light p-3 rounded"><code>import { initHero } from './hero.mjs';
+
+// Initialize the hero component
+initHero();
+
+// Control functions available
+controlHeroSlider('next');
+controlHeroSlider('pause');
+getHeroSliderInfo();</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Image Assets</h2>
+            </div>
+            <div class="card-body">
+              <p class="mb-3">The component uses the following images from the <code>/public/images/hero/</code> directory:</p>
+              <ul class="list-unstyled">
+                <li class="mb-2">🖼️ <code>/images/hero/slide1.webp</code> - Main slide illustration</li>
+                <li class="mb-2">🖼️ <code>/images/hero/slide2.webp</code> - Community slide illustration</li>
+                <li class="mb-2">🖼️ <code>/images/hero/slide3.webp</code> - Collaboration slide illustration</li>
+              </ul>
+              <p class="text-muted">All images are optimized WebP format for better performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component Display -->
+  <Hero />
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="alert alert-info">
+          <h4 class="alert-heading">Production Ready</h4>
+          <p class="mb-0">
+            This Hero component is production-ready and follows all project conventions. 
+            It can be imported and used directly in your production pages or layouts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DevLayout>
+
+<script type="module">
+  import { initHero } from '/src/scripts/modules/hero.mjs';
+  initHero();
+</script>
