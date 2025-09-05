@@ -9,11 +9,7 @@
 // ==========================================================================
 
 .sec {
-  padding: 4rem 0;
-
-  @media (min-width: $md) {
-    padding: 6rem 0;
-  }
+  padding: 64px 0;
 
   &__header {
     margin-bottom: 2rem;
