@@ -10,20 +10,20 @@
     @media (min-width: $lg) {
       display: flex;
       align-items: center;
-      gap: 4.5rem;
+      gap: 72px;
     }
   }
 
   // Header Section
   &__header {
     @media (min-width: $lg) {
-      flex: 0 0 33.75rem; // 540px
+      flex: 0 0 540px;
     }
   }
 
   &__title {
     @media (min-width: $lg) {
-      max-width: 25.5rem; // 408px
+      max-width: 408px;
     }
   }
 
@@ -45,16 +45,16 @@
   &__stats-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.875rem; // 30px
-    
+    gap: 30px;
+
     @media (min-width: $md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2.5rem; // 40px
+      gap: 40px;
     }
-    
+
     @media (min-width: $lg) {
-      gap: 1.875rem 1.875rem; // 30px
+      gap: 30px 30px;
     }
   }
 
@@ -62,13 +62,13 @@
   &__stat {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
   }
 
   &__stat-icon {
     flex-shrink: 0;
-    width: 3rem; // 48px
-    height: 3rem; // 48px
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,15 +86,15 @@
 
   &__stat-number {
     color: var(--color-dark-grey);
-    font-size: 1.75rem; // 28px
+    font-size: 28px;
     font-weight: 700;
-    line-height: 2.25rem; // 36px
+    line-height: 36px;
     margin-bottom: 0;
   }
 
   &__stat-label {
     color: var(--color-grey);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
