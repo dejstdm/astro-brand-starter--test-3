@@ -1,0 +1,51 @@
+---
+import DevLayout from '../../../layouts/DevLayout.astro';
+import Clients from '../../../components/prod/Clients.astro';
+---
+
+<DevLayout title="Clients">
+  <div class="component-showcase">
+    <h1>Clients Component</h1>
+    <p>A responsive client logos showcase section following the project's design system and BEM methodology.</p>
+    
+    <Clients />
+    
+    <section class="component-info-section py-5">
+      <div class="container">
+        <h2 class="mb-3">Clients Section</h2>
+        <p>
+          <strong>Clients</strong> is a design component following BEM and project conventions. 
+          It demonstrates how to display client logos in a responsive grid layout.
+        </p>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Clients Section Features</h3>
+            <ul class="mb-0">
+              <li>Follows BEM structure and project section conventions</li>
+              <li>Section wrapper: <code>page-sec page-sec--clients</code> with <code>container</code></li>
+              <li>Responsive grid layout: 2 columns on mobile, up to 7 columns on desktop</li>
+              <li>Uses existing client logos from <code>/images/clients/</code> directory</li>
+              <li>Hover effects for improved user interaction</li>
+              <li>Proper semantic HTML structure with alt text for accessibility</li>
+              <li>Mobile-first approach with progressive enhancement</li>
+              <li>All styles in dedicated SCSS partial, imported in <code>main.scss</code></li>
+              <li>Uses design system colors and typography tokens</li>
+              <li>Ready for use in design system and production pages</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Usage Example</h3>
+            <pre style="background:#f8f8f8;padding:1rem;border-radius:6px;overflow:auto"><code>{`---
+import Clients from '../../../components/prod/Clients.astro';
+---
+<Clients />
+`}</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DevLayout>

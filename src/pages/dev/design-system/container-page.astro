@@ -1,0 +1,144 @@
+---
+// Container showcase page for design system
+import DevLayout from '../../../layouts/DevLayout.astro';
+---
+<DevLayout>
+  <div class="container">
+    <h1>Container System</h1>
+    <p class="lead">Responsive container classes for consistent page layouts</p>
+    
+    <section class="container-demo">
+      <h2>Container Classes</h2>
+      
+      <div class="demo-item">
+        <h3>.container</h3>
+        <p>Responsive container with max-widths at different breakpoints:</p>
+        <ul>
+          <li><strong>Mobile:</strong> 100% width with 35px padding</li>
+          <li><strong>Tablet (768px+):</strong> max-width 720px with 15px padding</li>
+          <li><strong>Desktop (992px+):</strong> max-width 960px</li>
+          <li><strong>Large (1200px+):</strong> max-width 1140px</li>
+          <li><strong>Extra Large (1400px+):</strong> max-width 1320px</li>
+          <li><strong>Custom (1440px+):</strong> max-width 1152px</li>
+        </ul>
+        
+        <div class="container-example">
+          <div class="container">
+            <div class="demo-content">
+              <p>This content is inside a <code>.container</code> class</p>
+              <p>Resize your browser to see the responsive behavior</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="demo-item">
+        <h3>.container-fluid</h3>
+        <p>Full-width container that maintains consistent padding:</p>
+        <ul>
+          <li><strong>Mobile:</strong> 100% width with 35px padding</li>
+          <li><strong>Tablet+:</strong> 100% width with 15px padding</li>
+        </ul>
+        
+        <div class="container-example">
+          <div class="container-fluid">
+            <div class="demo-content">
+              <p>This content is inside a <code>.container-fluid</code> class</p>
+              <p>It spans the full width while maintaining consistent padding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container-demo">
+      <h2>Usage Examples</h2>
+      
+      <div class="demo-item">
+        <h3>Basic Page Layout</h3>
+        <div class="container">
+          <div class="demo-content">
+            <h4>Page Header</h4>
+            <p>Your page content goes here...</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="demo-item">
+        <h3>Nested Containers</h3>
+        <div class="container">
+          <div class="demo-content">
+            <h4>Main Content</h4>
+            <p>Main page content with container...</p>
+            
+            <div class="container-fluid">
+              <div class="demo-content">
+                <h5>Full-width Section</h5>
+                <p>This section spans the full width...</p>
+              </div>
+            </div>
+            
+            <p>Back to main container content...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DevLayout>
+
+<style>
+  .container-demo {
+    margin-bottom: 3rem;
+  }
+  
+  .demo-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    border-radius: 0.375rem;
+  }
+  
+  .demo-item h3 {
+    color: #495057;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .demo-item ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .demo-item li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .container-example {
+    margin-top: 1rem;
+    border: 2px dashed #dee2e6;
+    border-radius: 0.375rem;
+    background-color: #f8f9fa;
+  }
+  
+  .demo-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .demo-content p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .demo-content code {
+    background-color: #e9ecef;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .lead {
+    font-size: 1.125rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+</style>

@@ -1,0 +1,396 @@
+---
+import DevLayout from '../../../layouts/DevLayout.astro';
+---
+
+<DevLayout>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="display-4 mb-3">Buttons</h1>
+        <p class="lead text-muted mb-5">Complete button component library following the design system specifications.</p>
+      </div>
+    </div>
+
+    <!-- Standard Buttons -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="h3 mb-4 text-primary">Standard buttons</h2>
+        
+        <!-- Button Variants -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Button Variants</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Primary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal">Primary Button</button>
+                    <button class="btn btn--primary btn--medium">Primary Button</button>
+                    <button class="btn btn--primary btn--small">Primary Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Secondary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--secondary btn--normal">Secondary Button</button>
+                    <button class="btn btn--secondary btn--medium">Secondary Button</button>
+                    <button class="btn btn--secondary btn--small">Secondary Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Tertiary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--tertiary btn--normal">Tertiary Button</button>
+                    <button class="btn btn--tertiary btn--medium">Tertiary Button</button>
+                    <button class="btn btn--tertiary btn--small">Tertiary Button</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Sizes -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Button Sizes</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Normal</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal">Primary</button>
+                    <button class="btn btn--secondary btn--normal">Secondary</button>
+                    <button class="btn btn--tertiary btn--normal">Tertiary</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Medium</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--medium">Primary</button>
+                    <button class="btn btn--secondary btn--medium">Secondary</button>
+                    <button class="btn btn--tertiary btn--medium">Tertiary</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Small</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--small">Primary</button>
+                    <button class="btn btn--secondary btn--small">Secondary</button>
+                    <button class="btn btn--tertiary btn--small">Tertiary</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button States -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Button States</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Default</h4>
+                  <button class="btn btn--primary btn--medium">Default</button>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Hover</h4>
+                  <button class="btn btn--primary btn--medium">Hover</button>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Focus</h4>
+                  <button class="btn btn--primary btn--medium">Focus</button>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Click</h4>
+                  <button class="btn btn--primary btn--medium">Click</button>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Loading</h4>
+                  <button class="btn btn--primary btn--medium btn--loading">Loading</button>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Disabled</h4>
+                  <button class="btn btn--primary btn--medium" disabled>Disabled</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button with Icons -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Button with Icons</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">No icon</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal">Primary Button</button>
+                    <button class="btn btn--primary btn--medium">Primary Button</button>
+                    <button class="btn btn--primary btn--small">Primary Button</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Icon left</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal">
+                      <img src="/icons/16/User Interface/Check.svg" alt="Check" class="btn__icon">
+                      Primary Button
+                    </button>
+                    <button class="btn btn--primary btn--medium">
+                      <img src="/icons/16/User Interface/Check.svg" alt="Check" class="btn__icon">
+                      Primary Button
+                    </button>
+                    <button class="btn btn--primary btn--small">
+                      <img src="/icons/16/User Interface/Check.svg" alt="Check" class="btn__icon">
+                      Primary Button
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Icon right</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal">
+                      Primary Button
+                      <img src="/icons/16/Arrows & Directions/Right.svg" alt="Arrow" class="btn__icon">
+                    </button>
+                    <button class="btn btn--primary btn--medium">
+                      Primary Button
+                      <img src="/icons/16/Arrows & Directions/Right.svg" alt="Arrow" class="btn__icon">
+                    </button>
+                    <button class="btn btn--primary btn--small">
+                      Primary Button
+                      <img src="/icons/16/Arrows & Directions/Right.svg" alt="Arrow" class="btn__icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon Buttons -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="h3 mb-4 text-primary">Icon buttons</h2>
+        
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Icon Button Variants</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Primary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--primary btn--normal" aria-label="Action">
+                      <img src="/icons/24/User Interface/Search.svg" alt="Search" class="btn__icon">
+                    </button>
+                    <button class="btn btn--primary btn--medium" aria-label="Action">
+                      <img src="/icons/24/User Interface/Search.svg" alt="Search" class="btn__icon">
+                    </button>
+                    <button class="btn btn--primary btn--small" aria-label="Action">
+                      <img src="/icons/16/User Interface/Search.svg" alt="Search" class="btn__icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Secondary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--secondary btn--normal" aria-label="Action">
+                      <img src="/icons/24/User Interface/Settings.svg" alt="Settings" class="btn__icon">
+                    </button>
+                    <button class="btn btn--secondary btn--medium" aria-label="Action">
+                      <img src="/icons/24/User Interface/Settings.svg" alt="Settings" class="btn__icon">
+                    </button>
+                    <button class="btn btn--secondary btn--small" aria-label="Action">
+                      <img src="/icons/16/User Interface/Settings.svg" alt="Settings" class="btn__icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Tertiary</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <button class="btn btn--tertiary btn--normal" aria-label="Action">
+                      <img src="/icons/24/User Interface/More circle.svg" alt="More" class="btn__icon">
+                    </button>
+                    <button class="btn btn--tertiary btn--medium" aria-label="Action">
+                      <img src="/icons/24/User Interface/More circle.svg" alt="More" class="btn__icon">
+                    </button>
+                    <button class="btn btn--tertiary btn--small" aria-label="Action">
+                      <img src="/icons/16/User Interface/More circle.svg" alt="More" class="btn__icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Buttons -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="h3 mb-4 text-primary">Link</h2>
+        
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Link Button Sizes</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Normal</h4>
+                  <a href="#" class="btn btn--primary btn--normal">Primary Link</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Medium</h4>
+                  <a href="#" class="btn btn--primary btn--medium">Primary Link</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Small</h4>
+                  <a href="#" class="btn btn--primary btn--small">Primary Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Link Button States</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Default</h4>
+                  <a href="#" class="btn btn--primary btn--medium">Default</a>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Hover</h4>
+                  <a href="#" class="btn btn--primary btn--medium">Hover</a>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Focus</h4>
+                  <a href="#" class="btn btn--primary btn--medium">Focus</a>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Click</h4>
+                  <a href="#" class="btn btn--primary btn--medium">Click</a>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3 text-muted">Disabled</h4>
+                  <a href="#" class="btn btn--primary btn--medium" aria-disabled="true">Disabled</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Width Buttons -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="h4 mb-0">Full Width Buttons</h3>
+          </div>
+          <div class="card-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3">Primary Full Width</h4>
+                  <button class="btn btn--primary btn--medium btn--full-width">Full Width Primary Button</button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="border rounded p-3">
+                  <h4 class="h6 mb-3">Secondary Full Width</h4>
+                  <button class="btn btn--secondary btn--medium btn--full-width">Full Width Secondary Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DevLayout>

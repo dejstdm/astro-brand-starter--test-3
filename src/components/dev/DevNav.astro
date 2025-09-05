@@ -1,0 +1,261 @@
+---
+// Navigation data structure
+const navigationData = {
+  brand: {
+    name: "Brand Starter",
+    logo: "/favicon.svg",
+    href: "/"
+  },
+  mainNav: [
+    {
+      name: "Home",
+      href: "/",
+      active: false
+    }
+  ],
+  prodPages: [
+    {
+      name: "Homepage",
+      href: "/prod/homepage",
+      active: false
+    }
+  ],
+  designSystem: [
+    {
+      name: "Buttons",
+      href: "/dev/design-system/buttons-page",
+      active: false
+    },
+    {
+      name: "Typography",
+      href: "/dev/design-system/typography-page",
+      active: false
+    },
+    {
+      name: "Container",
+      href: "/dev/design-system/container-page",
+      active: false
+    },
+    {
+      name: "Colors",
+      href: "/dev/design-system/colors-page",
+      active: false
+    }
+  ],
+  prodComponents: [
+    {
+      name: "Clients",
+      href: "/dev/components-pages/clients-page",
+      active: false
+    },
+    {
+      name: "Testimonial",
+      href: "/dev/components-pages/testimonial-page",
+      active: false
+    }
+  ],
+  exampleComponents: [
+    {
+      name: "Example Clients",
+      href: "/dev/components-pages/example-clients-page",
+      active: false
+    },
+    {
+      name: "Example Slider",
+      href: "/dev/components-pages/example-slider-page",
+      active: false
+    },
+    {
+      name: "Example Hero Section",
+      href: "/dev/components-pages/example-hero-page",
+      active: false
+    },
+    {
+      name: "Example Countdown",
+      href: "/dev/components-pages/example-count-down-page",
+      active: false
+    },
+    {
+      name: "Example Accordion",
+      href: "/dev/components-pages/example-accordion-page",
+      active: false
+    },
+    {
+      name: "Example Back to Top",
+      href: "/dev/components-pages/example-back-to-top-page",
+      active: false
+    },
+    {
+      name: "Example Checkbox",
+      href: "/dev/components-pages/example-checkbox-page",
+      active: false
+    },
+    {
+      name: "Example Floating Labels",
+      href: "/dev/components-pages/example-floating-labels-page",
+      active: false
+    },
+    {
+      name: "Example Modal",
+      href: "/dev/components-pages/example-modal-page",
+      active: false
+    }
+  ]
+};
+
+// Set active states based on current pathname
+const { pathname } = Astro.url;
+
+navigationData.mainNav.forEach(item => {
+  item.active = pathname === item.href;
+});
+
+navigationData.prodPages.forEach(item => {
+  item.active = pathname === item.href;
+});
+
+navigationData.designSystem.forEach(item => {
+  item.active = pathname === item.href;
+});
+
+navigationData.prodComponents.forEach(item => {
+  item.active = pathname === item.href;
+});
+
+navigationData.exampleComponents.forEach(item => {
+  item.active = pathname === item.href;
+});
+---
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href={navigationData.brand.href}>
+      <img
+        src={navigationData.brand.logo}
+        alt="Brand"
+        width="30"
+        height="30"
+        class="d-inline-block align-text-top me-2"
+      />
+      {navigationData.brand.name}
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Main Navigation -->
+        {navigationData.mainNav.map(item => (
+          <li class="nav-item">
+            <a class={`nav-link${item.active ? ' active' : ''}`} href={item.href}>
+              {item.name}
+            </a>
+          </li>
+        ))}
+
+        <!-- Prod Pages Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="prodDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Prod pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+            {navigationData.prodPages.map(item => (
+              <li>
+                <a class={`dropdown-item${item.active ? ' active' : ''}`} href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        <!-- Dev Pages Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="devDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dev pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="devDropdown">
+            <li>
+              <a class={`dropdown-item${pathname === '/dev/components-all' ? ' active' : ''}`} href="/dev/components-all">
+                Components All
+              </a>
+            </li>
+            <li>
+              <a class={`dropdown-item${pathname === '/dev/prod-components' ? ' active' : ''}`} href="/dev/prod-components">
+                Prod Components
+              </a>
+            </li>
+            <li class="dropdown-divider"></li>
+            {navigationData.designSystem.map(item => (
+              <li>
+                <a class={`dropdown-item${item.active ? ' active' : ''}`} href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        <!-- Dev Components Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="devComponentsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Components
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="devComponentsDropdown">
+            <li><h6 class="dropdown-header">Prod Components</h6></li>
+            {navigationData.prodComponents.map(item => (
+              <li>
+                <a class={`dropdown-item${item.active ? ' active' : ''}`} href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+            <li class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header">Example Components</h6></li>
+            {navigationData.exampleComponents.map(item => (
+              <li>
+                <a class={`dropdown-item${item.active ? ' active' : ''}`} href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

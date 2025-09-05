@@ -1,0 +1,28 @@
+---
+import DevLayout from '../../../layouts/DevLayout.astro';
+import Testimonial from '../../../components/prod/Testimonial.astro';
+---
+
+<DevLayout title="Testimonial Component">
+  <div class="testimonial-showcase">
+    <h1>Testimonial Component</h1>
+    <p>This page showcases the Testimonial component with responsive design.</p>
+    
+    <Testimonial />
+  </div>
+</DevLayout>
+
+<style>
+  .testimonial-showcase {
+    padding: 2rem 0;
+  }
+  
+  .testimonial-showcase h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-showcase p {
+    margin-bottom: 3rem;
+    opacity: 0.8;
+  }
+</style>

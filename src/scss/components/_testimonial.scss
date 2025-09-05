@@ -1,0 +1,158 @@
+.testimonial {
+  padding: 4rem 0;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  &__text {
+    text-align: center;
+  }
+  
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  &__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  &__quote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  &__quote blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  &__author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  &__author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  &__author-info {
+    text-align: left;
+  }
+  
+  &__author-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  &__author-title {
+    font-size: 0.875rem;
+    opacity: 0.7;
+  }
+  
+  &__clients {
+    text-align: center;
+  }
+  
+  &__clients-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  &__logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  // Tablet and up
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+    
+    &__content {
+      gap: 4rem;
+    }
+    
+    &__title {
+      font-size: 2.5rem;
+    }
+    
+    &__subtitle {
+      font-size: 1.25rem;
+    }
+    
+    &__quote blockquote {
+      font-size: 1.375rem;
+    }
+    
+    &__logos {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+    
+    &__logo {
+      height: 50px;
+    }
+  }
+  
+  // Desktop and up
+  @media (min-width: 1024px) {
+    &__content {
+      flex-direction: row;
+      align-items: center;
+      gap: 6rem;
+    }
+    
+    &__text {
+      text-align: left;
+      flex: 1;
+    }
+    
+    &__clients {
+      flex: 1;
+      text-align: left;
+    }
+    
+    &__logos {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      justify-items: start;
+    }
+    
+    &__quote {
+      margin: 0;
+    }
+    
+    &__author {
+      justify-content: flex-start;
+    }
+  }
+}
