@@ -10,6 +10,7 @@ import { initExampleFloatingLabels } from "./modules/example-floating-labels.mjs
 import { initExampleModal } from "./modules/example-modal.mjs";
 import { exampleHeroSlider } from "./modules/example-hero-slider.mjs";
 import { initHero } from "./modules/hero.mjs";
+import { initHeroV2 } from "./modules/hero-v2.mjs";
 
 exampleFunction();
 buttonsExample();
@@ -20,6 +21,7 @@ initExampleFloatingLabels();
 initExampleModal();
 exampleHeroSlider();
 initHero();
+initHeroV2();
 
 // Initialize countdown timer and back-to-top
 document.addEventListener('DOMContentLoaded', () => {
