@@ -17,6 +17,7 @@
 // COMPONENTS
 @use 'components/buttons';
 @use 'components/example-hero';
+@use 'components/example-hero-slider';
 @use 'components/example-slider';
 @use 'components/example-count-down';
 @use 'components/example-accordion';
@@ -25,4 +26,6 @@
 @use 'components/example-floating-labels';
 @use 'components/example-modal';
 @use 'components/clients';
+@use 'components/hero';
+@use 'components/hero-v2';
 @use 'components/testimonial';

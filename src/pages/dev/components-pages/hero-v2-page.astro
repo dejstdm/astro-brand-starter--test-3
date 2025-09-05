@@ -1,0 +1,203 @@
+---
+import DevLayout from '../../../layouts/DevLayout.astro';
+import HeroV2 from '../../../components/prod/HeroV2.astro';
+---
+
+<DevLayout title="HeroV2 Component">
+  <div class="component-showcase">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-4 mb-3">HeroV2 Component</h1>
+          <p class="lead text-muted mb-5">
+            A clean, single-slide hero component based on the Figma design. Features responsive navigation, 
+            pixel-perfect layout, and modern design elements without slider functionality.
+          </p>
+        </div>
+      </div>
+      
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Component Features</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Navigation</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">✅ Nexcent SVG logo from Figma</li>
+                    <li class="mb-2">✅ Responsive navigation menu</li>
+                    <li class="mb-2">✅ Mobile hamburger toggle</li>
+                    <li class="mb-2">✅ Action buttons (Login/Sign up)</li>
+                    <li class="mb-2">✅ Exact spacing from design</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Hero Section</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">✅ Single hero layout</li>
+                    <li class="mb-2">✅ Figma-exact typography</li>
+                    <li class="mb-2">✅ Original image from design</li>
+                    <li class="mb-2">✅ Pagination indicators</li>
+                    <li class="mb-2">✅ Responsive grid layout</li>
+                    <li class="mb-2">✅ Pixel-perfect spacing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Design Fidelity</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Figma Design Match</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">🎨 Background: <code>--color-silver</code> (#F5F7FA)</li>
+                    <li class="mb-2">🎨 Primary: <code>--color-primary</code> (#4CAF4F)</li>
+                    <li class="mb-2">🎨 Text: <code>--color-text-primary</code> (#18191F)</li>
+                    <li class="mb-2">🎨 Secondary: <code>--color-grey</code> (#717171)</li>
+                    <li class="mb-2">📏 Layout: 1152px max content width</li>
+                    <li class="mb-2">📏 Spacing: 104px gap between sections</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Typography System</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">📝 Title: 64px/76px line height</li>
+                    <li class="mb-2">📝 Subtitle: 16px/24px line height</li>
+                    <li class="mb-2">📝 Nav links: 16px/24px line height</li>
+                    <li class="mb-2">📝 Buttons: 16px/24px in buttons</li>
+                    <li class="mb-2">📝 Font: Inter system font stack</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Technical Implementation</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Modern CSS Techniques</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">🔧 Flexbox layout system</li>
+                    <li class="mb-2">🔧 CSS Grid for complex layouts</li>
+                    <li class="mb-2">🔧 Responsive design patterns</li>
+                    <li class="mb-2">🔧 CSS custom properties</li>
+                    <li class="mb-2">🔧 BEM methodology</li>
+                    <li class="mb-2">🔧 Mobile-first approach</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Project Integration</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">⚙️ Follows AGENTS.md guidelines</li>
+                    <li class="mb-2">⚙️ Uses existing color variables</li>
+                    <li class="mb-2">⚙️ Matches project conventions</li>
+                    <li class="mb-2">⚙️ SVG assets from Figma</li>
+                    <li class="mb-2">⚙️ Responsive breakpoints</li>
+                    <li class="mb-2">⚙️ Accessibility features</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Usage & Implementation</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Component Structure</h4>
+                  <pre class="bg-light p-3 rounded"><code>&lt;section class="page-sec page-sec--hero-v2"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="hero-v2 sec"&gt;
+      &lt;nav class="hero-v2__nav"&gt;
+        &lt;!-- Navigation content --&gt;
+      &lt;/nav&gt;
+      
+      &lt;div class="hero-v2__content sec__content"&gt;
+        &lt;!-- Hero content --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h5 mb-3">Responsive Behavior</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">📱 Mobile: Stacked layout, hidden menu</li>
+                    <li class="mb-2">💻 Tablet: Adjusted spacing and gaps</li>
+                    <li class="mb-2">🖥️ Desktop: Full side-by-side layout</li>
+                    <li class="mb-2">🔄 Fluid scaling between breakpoints</li>
+                    <li class="mb-2">🎯 Touch-friendly interactive elements</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="h3 mb-0">Figma Design Assets</h2>
+            </div>
+            <div class="card-body">
+              <p class="mb-3">The component uses the following assets directly from the Figma design:</p>
+              <ul class="list-unstyled">
+                <li class="mb-2">🖼️ <strong>Hero Image:</strong> <code>ef09b474f40694953dceb89b19ce896775417452</code></li>
+                <li class="mb-2">🎨 <strong>Nexcent Logo:</strong> SVG extracted from Figma with exact paths</li>
+                <li class="mb-2">🎯 <strong>Pagination Dots:</strong> SVG with proper fill and opacity values</li>
+                <li class="mb-2">📐 <strong>Layout Dimensions:</strong> 1440px width, exact spacing values</li>
+              </ul>
+              <p class="text-muted">All assets maintain their original quality and dimensions from the Figma design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component Display -->
+  <HeroV2 />
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="alert alert-success">
+          <h4 class="alert-heading">Production Ready</h4>
+          <p class="mb-0">
+            This HeroV2 component is production-ready and follows all project conventions. 
+            It's a pixel-perfect implementation of the Figma design using modern CSS techniques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DevLayout>

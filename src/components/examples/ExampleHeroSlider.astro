@@ -1,0 +1,135 @@
+---
+// Hero Slider Component with Navigation
+---
+
+<section class="page-sec page-sec--example-hero-slider">
+  <div class="example-hero-slider sec">
+    <!-- Navigation -->
+    <nav class="example-hero-slider__nav">
+      <div class="container">
+        <div class="example-hero-slider__nav-content">
+          <a href="/" class="example-hero-slider__logo">
+            <img src="/favicon.svg" alt="Nexcent" class="example-hero-slider__logo-image" />
+            <span class="example-hero-slider__logo-text">Nexcent</span>
+          </a>
+          
+          <ul class="example-hero-slider__nav-menu">
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link example-hero-slider__nav-link--active">Home</a>
+            </li>
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link">Service</a>
+            </li>
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link">Feature</a>
+            </li>
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link">Product</a>
+            </li>
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link">Testimonial</a>
+            </li>
+            <li class="example-hero-slider__nav-item">
+              <a href="#" class="example-hero-slider__nav-link">FAQ</a>
+            </li>
+          </ul>
+          
+          <div class="example-hero-slider__nav-actions">
+            <a href="#" class="example-hero-slider__nav-btn example-hero-slider__nav-btn--secondary">Login</a>
+            <a href="#" class="example-hero-slider__nav-btn example-hero-slider__nav-btn--primary">Sign up</a>
+          </div>
+          
+          <!-- Mobile menu button -->
+          <button class="example-hero-slider__mobile-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="example-hero-slider__content sec__content">
+      <div class="container">
+        <div class="swiper example-hero-slider__swiper js__example-hero-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="example-hero-slider__slide">
+                <div class="example-hero-slider__slide-content">
+                  <div class="example-hero-slider__text-section">
+                    <h1 class="example-hero-slider__title sec__title">
+                      <span class="example-hero-slider__title-line">Lessons and insights</span>
+                      <span class="example-hero-slider__title-line example-hero-slider__title-line--highlight">from 8 years</span>
+                    </h1>
+                    <p class="example-hero-slider__subtitle">
+                      Where to grow your business as a photographer: site or social media?
+                    </p>
+                    <a href="#" class="example-hero-slider__btn btn btn-primary">
+                      Register
+                    </a>
+                  </div>
+                  <div class="example-hero-slider__visual-section">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/93aee80fc7dca8ac7fb640d734f36c52c3dedfc8?width=794" alt="Hero illustration" class="example-hero-slider__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="example-hero-slider__slide">
+                <div class="example-hero-slider__slide-content">
+                  <div class="example-hero-slider__text-section">
+                    <h1 class="example-hero-slider__title sec__title">
+                      <span class="example-hero-slider__title-line">Grow your network</span>
+                      <span class="example-hero-slider__title-line example-hero-slider__title-line--highlight">and community</span>
+                    </h1>
+                    <p class="example-hero-slider__subtitle">
+                      Connect with like-minded professionals and expand your business reach.
+                    </p>
+                    <a href="#" class="example-hero-slider__btn btn btn-primary">
+                      Get Started
+                    </a>
+                  </div>
+                  <div class="example-hero-slider__visual-section">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/12044ca1741006cea5415979fe9686d58e4a383e?width=794" alt="Network illustration" class="example-hero-slider__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="example-hero-slider__slide">
+                <div class="example-hero-slider__slide-content">
+                  <div class="example-hero-slider__text-section">
+                    <h1 class="example-hero-slider__title sec__title">
+                      <span class="example-hero-slider__title-line">Build something</span>
+                      <span class="example-hero-slider__title-line example-hero-slider__title-line--highlight">amazing together</span>
+                    </h1>
+                    <p class="example-hero-slider__subtitle">
+                      Join thousands of entrepreneurs creating meaningful connections.
+                    </p>
+                    <a href="#" class="example-hero-slider__btn btn btn-primary">
+                      Join Now
+                    </a>
+                  </div>
+                  <div class="example-hero-slider__visual-section">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/93aee80fc7dca8ac7fb640d734f36c52c3dedfc8?width=794" alt="Community illustration" class="example-hero-slider__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom pagination dots -->
+          <div class="example-hero-slider__pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

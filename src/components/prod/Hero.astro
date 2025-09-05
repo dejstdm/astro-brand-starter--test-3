@@ -1,0 +1,133 @@
+---
+// Hero Production Component with Swiper Slider
+---
+
+<section class="page-sec page-sec--hero">
+  <div class="container">
+    <div class="hero sec">
+      <!-- Navigation -->
+      <nav class="hero__nav">
+        <div class="hero__nav-content">
+          <a href="/" class="hero__logo">
+            <img src="/favicon.svg" alt="Nexcent" class="hero__logo-image" />
+            <span class="hero__logo-text">Nexcent</span>
+          </a>
+          
+          <ul class="hero__nav-menu">
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link hero__nav-link--active">Home</a>
+            </li>
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link">Service</a>
+            </li>
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link">Feature</a>
+            </li>
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link">Product</a>
+            </li>
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link">Testimonial</a>
+            </li>
+            <li class="hero__nav-item">
+              <a href="#" class="hero__nav-link">FAQ</a>
+            </li>
+          </ul>
+          
+          <div class="hero__nav-actions">
+            <a href="#" class="hero__nav-btn hero__nav-btn--secondary">Login</a>
+            <a href="#" class="hero__nav-btn hero__nav-btn--primary">Sign up</a>
+          </div>
+          
+          <!-- Mobile menu button -->
+          <button class="hero__mobile-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Slider Content -->
+      <div class="hero__content sec__content">
+        <div class="swiper hero__swiper js__hero-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="hero__slide">
+                <div class="hero__slide-content">
+                  <div class="hero__text-section">
+                    <h1 class="hero__title sec__title">
+                      <span class="hero__title-line">Lessons and insights</span>
+                      <span class="hero__title-line hero__title-line--highlight">from 8 years</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                      Where to grow your business as a photographer: site or social media?
+                    </p>
+                    <a href="#" class="hero__btn btn btn-primary">
+                      Register
+                    </a>
+                  </div>
+                  <div class="hero__visual-section">
+                    <img src="/images/hero/slide1.webp" alt="Lessons and insights illustration" class="hero__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="hero__slide">
+                <div class="hero__slide-content">
+                  <div class="hero__text-section">
+                    <h1 class="hero__title sec__title">
+                      <span class="hero__title-line">Learn and grow with</span>
+                      <span class="hero__title-line hero__title-line--highlight">our community</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                      Connect with like-minded professionals and expand your business network through our platform.
+                    </p>
+                    <a href="#" class="hero__btn btn btn-primary">
+                      Get Started
+                    </a>
+                  </div>
+                  <div class="hero__visual-section">
+                    <img src="/images/hero/slide2.webp" alt="Community growth illustration" class="hero__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="hero__slide">
+                <div class="hero__slide-content">
+                  <div class="hero__text-section">
+                    <h1 class="hero__title sec__title">
+                      <span class="hero__title-line">Build something</span>
+                      <span class="hero__title-line hero__title-line--highlight">amazing together</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                      Join thousands of entrepreneurs creating meaningful connections and growing their businesses.
+                    </p>
+                    <a href="#" class="hero__btn btn btn-primary">
+                      Join Now
+                    </a>
+                  </div>
+                  <div class="hero__visual-section">
+                    <img src="/images/hero/slide3.webp" alt="Building together illustration" class="hero__image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom pagination dots -->
+          <div class="hero__pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
